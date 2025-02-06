@@ -1,0 +1,639 @@
+[
+    {
+        "name": "因气候变化而诱发",
+        "key": "气候变化",
+        "description": "受气候变化影响而引发症状",
+        "Syndrome": "缓解期",
+        "Sub-Syndrome": "肾虚",
+        "TCMname": "哮病",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受气候变化影响而引发症状",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜尤甚",
+        "key": "夜",
+        "description": "到了晚上情况尤其严重",
+        "Syndrome": "痰蒙神窍",
+        "Sub-Syndrome": null,
+        "TCMname": "肺胀",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "到了晚上情况尤其严重",
+            "Level": null,
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜为甚",
+        "key": "夜",
+        "description": "在夜晚症状最为严重",
+        "Syndrome": "心血瘀阻",
+        "Sub-Syndrome": null,
+        "TCMname": "胸痹",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "在夜晚症状最为严重",
+            "Level": null,
+            "Time": "夜晚",
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇阴雨天易发作或加重",
+        "key": "阴雨天",
+        "description": "遇到阴雨天就容易发作或加重",
+        "Syndrome": "痰浊闭阻",
+        "Sub-Syndrome": null,
+        "TCMname": "胸痹",
+        "relation": [
+            "触发",
+            "加重"
+        ],
+        "structured_json": {
+            "Part": null,
+            "Sys": "遇到阴雨天就容易发作或加重",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜尤甚",
+        "key": "夜",
+        "description": "到了晚上情况尤其严重",
+        "Syndrome": "气阴两虚",
+        "Sub-Syndrome": null,
+        "TCMname": "心衰",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "到了晚上情况尤其严重",
+            "Level": null,
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇风尤剧",
+        "key": "风",
+        "description": "一遇到风，病情会变得更严重。",
+        "Syndrome": "外感头痛",
+        "Sub-Syndrome": "风湿头痛",
+        "TCMname": "头痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "一遇到风，病情会变得更严重",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜尤甚",
+        "key": "夜",
+        "description": "到了晚上情况尤其严重",
+        "Syndrome": "瘀血停滞",
+        "Sub-Syndrome": null,
+        "TCMname": "胃痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "到了晚上情况尤其严重",
+            "Level": "尤其严重",
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "得热则减",
+        "key": "热",
+        "description": "受热后症状减轻",
+        "Syndrome": "胃中寒冷",
+        "Sub-Syndrome": null,
+        "TCMname": "呃逆",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受热后症状减轻",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒痛甚",
+        "key": "寒",
+        "description": "遇到寒冷时，疼痛会加剧。",
+        "Syndrome": "寒邪内阻",
+        "Sub-Syndrome": null,
+        "TCMname": "腹痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "遇到寒冷时，疼痛会加剧",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "得温痛减",
+        "key": "温",
+        "description": "暖和一点疼痛就会减轻",
+        "Syndrome": "寒邪内阻",
+        "Sub-Syndrome": null,
+        "TCMname": "腹痛",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "暖和一点疼痛就会减轻",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒则甚",
+        "key": "寒",
+        "description": "只要天气变冷，病情就会恶化。",
+        "Syndrome": "胃中寒冷",
+        "Sub-Syndrome": null,
+        "TCMname": "呃逆",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "病情恶化",
+            "Level": null,
+            "Time": "天气变冷",
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜尤甚",
+        "key": "夜",
+        "description": "到了晚上情况尤其严重",
+        "Syndrome": "瘀血内停",
+        "Sub-Syndrome": null,
+        "TCMname": "腹痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "到了晚上情况尤其严重",
+            "Level": null,
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "至夜转剧",
+        "key": "夜",
+        "description": "到了晚上情况加剧",
+        "Syndrome": "阴虚痢",
+        "Sub-Syndrome": null,
+        "TCMname": "痢疾",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "到了晚上情况加剧",
+            "Level": null,
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "天冷易发",
+        "key": "天冷",
+        "description": "天气冷就容易发病",
+        "Syndrome": "发作期",
+        "Sub-Syndrome": "哮喘脱证",
+        "TCMname": "哮病",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "天气冷就容易发病",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "受寒易发",
+        "key": "寒",
+        "description": "受凉就容易发病",
+        "Syndrome": "发作期",
+        "Sub-Syndrome": "哮喘脱证",
+        "TCMname": "哮病",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受凉就容易发病",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "得温痛减",
+        "key": "温",
+        "description": "暖和一点疼痛就会减轻",
+        "Syndrome": "寒邪客胃",
+        "Sub-Syndrome": null,
+        "TCMname": "胃痛",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "疼痛",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒加重",
+        "key": "寒",
+        "description": "身体受寒后会加重症状",
+        "Syndrome": "寒邪客胃",
+        "Sub-Syndrome": null,
+        "TCMname": "胃痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "身体受寒后会加重症状",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "入夜痛甚",
+        "key": "夜",
+        "description": "一到夜晚疼痛加剧",
+        "Syndrome": "瘀血阻络",
+        "Sub-Syndrome": null,
+        "TCMname": "胁痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "疼痛加剧",
+            "Level": null,
+            "Time": "夜晚",
+            "Gender": null
+        }
+    },
+    {
+        "name": "得热则舒",
+        "key": "热",
+        "description": "受热后会感到舒适",
+        "Syndrome": "常证",
+        "Sub-Syndrome": "肝肾阴虚",
+        "TCMname": "鼓胀",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受热后会感到舒适",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "朝宽",
+        "key": "早",
+        "description": "早上症状轻",
+        "Syndrome": "常证",
+        "Sub-Syndrome": "肝肾阴虚",
+        "TCMname": "鼓胀",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "早上症状轻",
+            "Level": null,
+            "Time": "早上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "暮急",
+        "key": "夜",
+        "description": "晚上加重",
+        "Syndrome": "常证",
+        "Sub-Syndrome": "肝肾阴虚",
+        "TCMname": "鼓胀",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "晚上加重",
+            "Level": null,
+            "Time": "晚上",
+            "Gender": null
+        }
+    },
+    {
+        "name": "受热诱发",
+        "key": "热",
+        "description": "受热后引发或触发",
+        "Syndrome": "齿衄",
+        "Sub-Syndrome": "阴虚火旺",
+        "TCMname": "血证",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受热后引发或触发",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "阴雨天更甚",
+        "key": "阴雨天",
+        "description": "阴雨天时症状更加明显或加重",
+        "Syndrome": "悬饮",
+        "Sub-Syndrome": "阴虚内热",
+        "TCMname": "痰饮",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "阴雨天时症状更加明显或加重",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "天冷受寒加重",
+        "key": "寒冷",
+        "description": "天气冷或受凉会使病情恶化",
+        "Syndrome": "支饮",
+        "Sub-Syndrome": "脾肾阳虚",
+        "TCMname": "痰饮",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "天气冷或受凉会使病情恶化",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒即发",
+        "key": "寒冷",
+        "description": "一遇到寒冷就会发病。",
+        "Syndrome": "支饮",
+        "Sub-Syndrome": "脾肾阳虚",
+        "TCMname": "痰饮",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "一遇到寒冷就会发病",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "午后热甚",
+        "key": "午后",
+        "description": "午后体温升高的情况较为严重",
+        "Syndrome": "痰湿郁热",
+        "Sub-Syndrome": null,
+        "TCMname": "内伤发热",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "体温升高",
+            "Level": "严重",
+            "Time": "午后",
+            "Gender": null
+        }
+    },
+    {
+        "name": "午后或夜晚发热",
+        "key": [
+            "午后",
+            "夜"
+        ],
+        "description": "午后或夜晚感觉到热",
+        "Syndrome": "血瘀发热",
+        "Sub-Syndrome": null,
+        "TCMname": "内伤发热",
+        "relation": "触发",
+        "structured_json": {
+            "Part": null,
+            "Sys": "感觉到热",
+            "Level": null,
+            "Time": [
+                "午后",
+                "夜晚"
+            ],
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒加重",
+        "key": "寒冷",
+        "description": "身体受寒后会加重症状",
+        "Syndrome": "风寒湿痹",
+        "Sub-Syndrome": null,
+        "TCMname": "痹证",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "身体受寒后会加重症状",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "得热痛缓",
+        "key": "热",
+        "description": "受热后疼痛减轻",
+        "Syndrome": "风寒湿痹",
+        "Sub-Syndrome": null,
+        "TCMname": "痹证",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受热后疼痛减轻",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "得冷则舒",
+        "key": "冷",
+        "description": "感到冷就会舒服些",
+        "Syndrome": "风湿热痹",
+        "Sub-Syndrome": null,
+        "TCMname": "痹证",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "感到冷就会舒服些",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "遇寒加重",
+        "key": "寒冷",
+        "description": "身体受寒后会加重症状",
+        "Syndrome": "寒热错杂",
+        "Sub-Syndrome": null,
+        "TCMname": "痹证",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "身体受寒后会加重症状",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "气候变化加重",
+        "key": "气候变化",
+        "description": "气候变化会让症状加重",
+        "Syndrome": "气血虚痹",
+        "Sub-Syndrome": null,
+        "TCMname": "痹证",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "气候变化会让症状加重",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "寒冷加重",
+        "key": "寒冷",
+        "description": "受凉后症状加重",
+        "Syndrome": "寒湿腰痛",
+        "Sub-Syndrome": null,
+        "TCMname": "腰痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "受凉后症状加重",
+            "Level": null,
+            "Time": null,
+            "Gender": null
+        }
+    },
+    {
+        "name": "阴雨天加重",
+        "key": "阴雨天",
+        "description": "阴雨天时症状加重",
+        "Syndrome": "寒湿腰痛",
+        "Sub-Syndrome": null,
+        "TCMname": "腰痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "阴雨天时症状加重",
+            "Level": null,
+            "Time": "阴雨天",
+            "Gender": null
+        }
+    },
+    {
+        "name": "暑湿阴雨天气症状加重",
+        "key": "阴雨天",
+        "description": "在潮湿的天气里症状变得更严重",
+        "Syndrome": "湿热腰痛",
+        "Sub-Syndrome": null,
+        "TCMname": "腰痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "潮湿天气时症状加重",
+            "Level": null,
+            "Time": "潮湿天气",
+            "Gender": null
+        }
+    },
+    {
+        "name": "日轻",
+        "key": "日",
+        "description": "病情在白天较轻",
+        "Syndrome": "瘀血腰痛",
+        "Sub-Syndrome": null,
+        "TCMname": "腰痛",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "病情在白天较轻",
+            "Level": null,
+            "Time": "白天",
+            "Gender": null
+        }
+    },
+    {
+        "name": "夜重",
+        "key": "夜",
+        "description": "病情在白天较轻，晚上较重",
+        "Syndrome": "瘀血腰痛",
+        "Sub-Syndrome": null,
+        "TCMname": "腰痛",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "病情在白天较轻，晚上较重",
+            "Level": null,
+            "Time": "白天较轻，晚上较重",
+            "Gender": null
+        }
+    },
+    {
+        "name": "晨轻",
+        "key": "晨",
+        "description": "早晨症状轻",
+        "Syndrome": "脾虚不运",
+        "Sub-Syndrome": null,
+        "TCMname": "肥胖",
+        "relation": "减轻",
+        "structured_json": {
+            "Part": null,
+            "Sys": "症状轻重变化",
+            "Level": null,
+            "Time": [
+                "早晨轻"
+            ],
+            "Gender": null
+        }
+    },
+    {
+        "name": "暮重",
+        "key": "暮",
+        "description": "晚上症状加重",
+        "Syndrome": "脾虚不运",
+        "Sub-Syndrome": null,
+        "TCMname": "肥胖",
+        "relation": "加重",
+        "structured_json": {
+            "Part": null,
+            "Sys": "症状轻重变化",
+            "Level": null,
+            "Time": [
+                "晚上加重"
+            ],
+            "Gender": null
+        }
+    }
+]

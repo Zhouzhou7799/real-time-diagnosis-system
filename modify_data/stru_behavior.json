@@ -1,0 +1,1264 @@
+[
+  {
+    "name": "症状随情绪波动而增减",
+    "key": "情绪波动",
+    "description": "症状随着情绪的变化而有所增减",
+    "Syndrome": "内伤咳嗽",
+    "Sub-Syndrome": "肝火犯肺",
+    "TCMname": "咳嗽",
+    "relation": [
+      "加重",
+      "减轻"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "症状随着情绪的变化而有所增减",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "饮食不当而诱发",
+    "key": "饮食不当",
+    "description": "吃错东西引发不适",
+    "Syndrome": "缓解期",
+    "Sub-Syndrome": "脾虚",
+    "TCMname": "哮病",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "不适",
+      "Level": null,
+      "Time": "吃错东西后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则加重",
+    "key": "动",
+    "description": "一动就会加重症状",
+    "Syndrome": "缓解期",
+    "Sub-Syndrome": "肾虚",
+    "TCMname": "哮病",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "一动就会加重症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "每遇情志刺激而诱发",
+    "key": "情志刺激",
+    "description": "每当遇到情绪刺激就会引发症状",
+    "Syndrome": "实喘",
+    "Sub-Syndrome": "肺气郁痹",
+    "TCMname": "喘证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "每当遇到情绪刺激就会引发症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "稍劳即著",
+    "key": "劳",
+    "description": "稍微劳累就感觉明显",
+    "Syndrome": "痰浊壅肺",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "肺胀",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "稍微劳累就感觉明显",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "思虑劳心则症状加重",
+    "key": "思虑劳心",
+    "description": "思考或劳累后症状会加剧",
+    "Syndrome": "阴虚火旺",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "心悸",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "思考或劳累后症状会加剧",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则尤甚",
+    "key": "动",
+    "description": "稍微一动就更加明显",
+    "Syndrome": "心阳不振",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "心悸",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "稍微一动就更加明显",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "受惊易作",
+    "key": "受惊",
+    "description": "受惊吓时容易发病或出现症状",
+    "Syndrome": "痰火扰心",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "心悸",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "受惊吓时容易发病或出现症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇情志不遂时容易诱发或加重",
+    "key": "情志不遂",
+    "description": "心情不顺畅时容易引发或加重症状",
+    "Syndrome": "气滞心胸",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "胸痹",
+    "relation": [
+      "加重",
+      "触发"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "心情不顺畅时容易引发或加重症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则尤甚",
+    "key": "动",
+    "description": "稍微一动就更加明显",
+    "Syndrome": "气阴两虚",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "胸痹",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "稍微一动就更加明显",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则尤甚",
+    "key": "动",
+    "description": "稍微一动就更加明显",
+    "Syndrome": "心肾阳虚",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "胸痹",
+    "relation": "加重",
+    "structured_json": {
+      "Part": "肌肉",
+      "Sys": "疼痛稍微一动就更加明显",
+      "Level": "中等",
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "活动后诱发或加剧",
+    "key": "动",
+    "description": "活动后症状出现或加重",
+    "Syndrome": "气虚血瘀",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "心衰",
+    "relation": [
+      "加重",
+      "触发"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "活动后症状出现或加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则加剧",
+    "key": "动",
+    "description": "一动症状就会加重",
+    "Syndrome": "气阴两虚",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "心衰",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "一动症状就会加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "食后尤甚",
+    "key": "食",
+    "description": "吃饭后更加明显或严重",
+    "Syndrome": "脾气虚弱",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "多寐",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "吃饭后更加明显或严重",
+      "Level": null,
+      "Time": "吃饭后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳则加重",
+    "key": "劳",
+    "description": "劳累后病情会加重",
+    "Syndrome": "内伤头痛",
+    "Sub-Syndrome": "气虚头痛",
+    "TCMname": "头痛",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后病情会加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇烦劳郁怒而加重",
+    "key": "烦劳郁怒",
+    "description": "遇到烦恼、劳累或心情郁闷时，病情会加重。",
+    "Syndrome": "肝阳上亢",
+    "Sub-Syndrome": "瘀血头痛",
+    "TCMname": "眩晕",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "病情会加重",
+      "Level": null,
+      "Time": "遇到烦恼、劳累或心情郁闷时",
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则加剧",
+    "key": "动",
+    "description": "一动症状就会加重",
+    "Syndrome": "气血亏虚",
+    "Sub-Syndrome": "瘀血头痛",
+    "TCMname": "眩晕",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "一动症状就会加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳累即发",
+    "key": "劳",
+    "description": "一劳累就发生症状",
+    "Syndrome": "气血亏虚",
+    "Sub-Syndrome": "瘀血头痛",
+    "TCMname": "眩晕",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "一劳累就发生症状",
+      "Level": null,
+      "Time": "劳累时",
+      "Gender": null
+    }
+  },
+  {
+    "name": "得矢气后稍舒",
+    "key": "矢气",
+    "description": "放屁后会稍微舒服些",
+    "Syndrome": "饮食伤胃",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "放屁后会稍微舒服些",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "食后加剧",
+    "key": "食",
+    "description": "吃饭后症状加剧",
+    "Syndrome": "瘀血停滞",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "吃饭后症状加剧",
+      "Level": null,
+      "Time": "饭后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "得食则缓",
+    "key": "食",
+    "description": "吃东西后症状缓解",
+    "Syndrome": "脾胃虚寒",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "吃东西后症状缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳累后发作或加重",
+    "key": "劳",
+    "description": "劳累后症状出现或加重",
+    "Syndrome": "脾胃虚寒",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": [
+      "触发",
+      "加重"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后症状出现或加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "受凉后发作或加重",
+    "key": "受凉",
+    "description": "受凉后症状出现或变得更严重",
+    "Syndrome": "脾胃虚寒",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": [
+      "触发",
+      "加重"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "受凉后症状出现或变得更严重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "得嗳气则舒",
+    "key": "嗳气",
+    "description": "打嗝后感到舒适",
+    "Syndrome": "肝郁气滞",
+    "Sub-Syndrome": "脾胃虚寒",
+    "TCMname": "腹痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "打嗝后感到舒适",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "得矢气则舒",
+    "key": "矢气",
+    "description": "放屁后会感觉舒服些",
+    "Syndrome": "肝郁气滞",
+    "Sub-Syndrome": "脾胃虚寒",
+    "TCMname": "腹痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": "腹部",
+      "Sys": "放屁后会感觉舒服些",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇忧思恼怒则剧",
+    "key": "忧思恼怒",
+    "description": "忧愁、思虑、恼怒时症状加剧",
+    "Syndrome": "肝郁气滞",
+    "Sub-Syndrome": "脾胃虚寒",
+    "TCMname": "腹痛",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": [
+        "忧愁",
+        "思虑",
+        "恼怒时症状加剧"
+      ],
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "便后更甚",
+    "key": "便后",
+    "description": "大便后情况变得更糟",
+    "Syndrome": "虚寒痢",
+    "Sub-Syndrome": "肾阳虚衰",
+    "TCMname": "痢疾",
+    "relation": "加重",
+    "structured_json": {
+      "Part": "肠道",
+      "Sys": "大便后情况变得更糟",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳累即发",
+    "key": "劳",
+    "description": "一劳累就发生症状",
+    "Syndrome": "休息痢",
+    "Sub-Syndrome": "肾阳虚衰",
+    "TCMname": "痢疾",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "一劳累就发生症状",
+      "Level": null,
+      "Time": "劳累时",
+      "Gender": null
+    }
+  },
+  {
+    "name": "得嗳气则舒",
+    "key": "嗳气",
+    "description": "打嗝后感到舒适",
+    "Syndrome": "气滞心胸",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "胸痹",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "打嗝后感到舒适",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "得矢气则舒",
+    "key": "矢气",
+    "description": "放屁后会感觉舒服些",
+    "Syndrome": "气滞心胸",
+    "Sub-Syndrome": "正虚喘脱",
+    "TCMname": "胸痹",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "放屁后会感觉舒服些",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "吐后则舒",
+    "key": "吐",
+    "description": "呕吐后感觉舒服一些",
+    "Syndrome": "反胃（附）",
+    "Sub-Syndrome": "脾胃虚寒",
+    "TCMname": "噎膈",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "呕吐后感觉舒服一些",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "情绪波动诱发或导致疼痛加重",
+    "key": "情绪波动",
+    "description": "情绪变化会引发疼痛。",
+    "Syndrome": "肝气犯胃",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": [
+      "加重",
+      "触发"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "情绪变化会引发疼痛",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "矢气则痛舒",
+    "key": "矢气",
+    "description": "放屁后疼痛缓解",
+    "Syndrome": "肝气犯胃",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "放屁后疼痛缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "嗳气则痛舒",
+    "key": "嗳气",
+    "description": "打嗝后疼痛缓解",
+    "Syndrome": "肝气犯胃",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "打嗝后疼痛缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "泻后痛减",
+    "key": "泻",
+    "description": "排泄后疼痛减轻",
+    "Syndrome": "饮食积滞",
+    "Sub-Syndrome": "脾胃虚寒",
+    "TCMname": "腹痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "排泄后疼痛减轻",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "泻后痛减",
+    "key": "泻",
+    "description": "拉肚子后，疼痛有所缓解",
+    "Syndrome": "久泻",
+    "Sub-Syndrome": "肾阳虚衰",
+    "TCMname": "泄泻",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "拉肚子后，疼痛有所缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "泻后痛缓",
+    "key": "泻",
+    "description": "拉肚子后，疼痛有所缓解",
+    "Syndrome": "久泻",
+    "Sub-Syndrome": "肝气乘脾",
+    "TCMname": "泄泻",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "疼痛缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "泻后痛减",
+    "key": "泻",
+    "description": "排便后疼痛减轻",
+    "Syndrome": "暴泻",
+    "Sub-Syndrome": "食滞肠胃",
+    "TCMname": "泄泻",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": "腹部",
+      "Sys": "疼痛",
+      "Level": null,
+      "Time": "排便后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "吐后痛减",
+    "key": "吐",
+    "description": "呕吐后疼痛减轻",
+    "Syndrome": "饮食伤胃",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "胃痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "呕吐后疼痛减轻",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "多继发于中风",
+    "key": "中风",
+    "description": "这种情况经常在中风之后发生",
+    "Syndrome": "休止期",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "痫证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": [
+        "脑"
+      ],
+      "Sys": "中风后遗症",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "多继发于颅脑外伤",
+    "key": "颅脑外伤",
+    "description": "这种情况经常在头部受到外部伤害之后发生",
+    "Syndrome": "休止期",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "痫证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": [
+        "头部"
+      ],
+      "Sys": "受到外部伤害后",
+      "Level": null,
+      "Time": "经常",
+      "Gender": null
+    }
+  },
+  {
+    "name": "多继发于产伤",
+    "key": "产伤",
+    "description": "这种情况经常在分娩之后发生",
+    "Syndrome": "休止期",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "痫证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "这种情况经常在分娩之后发生",
+      "Level": null,
+      "Time": null,
+      "Gender": "女性"
+    }
+  },
+  {
+    "name": "多继发于颅内感染性疾患",
+    "key": "颅内感染性疾患",
+    "description": "这种情况经常在脑部感染疾病之后发生",
+    "Syndrome": "休止期",
+    "Sub-Syndrome": "瘀阻脑络",
+    "TCMname": "痫证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": [
+        "脑"
+      ],
+      "Sys": "这种情况经常在脑部感染疾病之后发生",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则喘甚",
+    "key": "动",
+    "description": "一动就喘得厉害",
+    "Syndrome": "发作期",
+    "Sub-Syndrome": "虚哮",
+    "TCMname": "哮病",
+    "relation": "加重",
+    "structured_json": {
+      "Part": [
+        "肺",
+        "呼吸系统"
+      ],
+      "Sys": "一动就喘得厉害",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳加重",
+    "key": "劳",
+    "description": "遇到劳累后会加重",
+    "Syndrome": "肝络失养",
+    "Sub-Syndrome": "阳虚秘",
+    "TCMname": "胁痛",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "遇到劳累后会加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "食后胀甚",
+    "key": "食",
+    "description": "吃饭后特别胀",
+    "Syndrome": "常证",
+    "Sub-Syndrome": "气滞湿阻",
+    "TCMname": "鼓胀",
+    "relation": "加重",
+    "structured_json": {
+      "Part": [
+        "胃",
+        "消化系统"
+      ],
+      "Sys": "吃饭后特别胀",
+      "Level": null,
+      "Time": "饭后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "得嗳气稍减",
+    "key": "打嗝",
+    "description": "打出嗝气后感觉稍微舒缓",
+    "Syndrome": "常证",
+    "Sub-Syndrome": "气滞湿阻",
+    "TCMname": "鼓胀",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "打嗝后感觉稍微舒缓",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "得矢气稍减",
+    "key": "放屁",
+    "description": "放屁后症状稍有减轻",
+    "Syndrome": "常证",
+    "Sub-Syndrome": "气滞湿阻",
+    "TCMname": "鼓胀",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "放屁后症状稍有减轻",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "病情常随情志波动",
+    "key": "情绪变化",
+    "description": "病情常常随着情绪的变化而波动",
+    "Syndrome": "气郁痰阻",
+    "Sub-Syndrome": "神昏",
+    "TCMname": "瘿病",
+    "relation": [
+      "加重",
+      "减轻"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "病情常常随着情绪的变化而波动",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳则发",
+    "key": "劳",
+    "description": "一劳累就发病",
+    "Syndrome": "劳疟",
+    "Sub-Syndrome": "冷瘴",
+    "TCMname": "疟疾",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "发病",
+      "Level": null,
+      "Time": "一劳累时",
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳即发",
+    "key": "劳",
+    "description": "劳累后立刻发作",
+    "Syndrome": "劳淋",
+    "Sub-Syndrome": "瘀水互结",
+    "TCMname": "淋证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后立刻发作",
+      "Level": null,
+      "Time": "劳累后立刻",
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳累后发作或加重",
+    "key": "劳",
+    "description": "劳累后症状出现或加重",
+    "Syndrome": "尿浊（附）",
+    "Sub-Syndrome": "脾虚气陷",
+    "TCMname": "淋证",
+    "relation": [
+      "触发",
+      "加重"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后症状出现或加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳加重",
+    "key": "劳",
+    "description": "烦躁不安",
+    "Syndrome": "心脾亏虚",
+    "Sub-Syndrome": "肾气衰微，邪陷心包",
+    "TCMname": "阳痿",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "烦躁不安",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳则加重",
+    "key": "劳",
+    "description": "劳作时症状会加剧",
+    "Syndrome": "劳伤心脾",
+    "Sub-Syndrome": "肾气衰微，邪陷心包",
+    "TCMname": "遗精",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳作时症状会加剧",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "烦劳诱发",
+    "key": "劳",
+    "description": "疲劳后诱发症状",
+    "Syndrome": "齿衄",
+    "Sub-Syndrome": "阴虚火旺",
+    "TCMname": "血证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "疲劳后诱发症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "醒则自止",
+    "key": "醒",
+    "description": "醒来后症状自然消失或缓解",
+    "Syndrome": "心血不足",
+    "Sub-Syndrome": "阴阳两虚",
+    "TCMname": "汗证",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "醒来后症状自然消失或缓解",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "常在劳累后发作或加剧",
+    "key": "劳",
+    "description": "劳累后症状出现或变得更严重",
+    "Syndrome": "气虚发热",
+    "Sub-Syndrome": "阴阳两虚",
+    "TCMname": "内伤发热",
+    "relation": [
+      "触发",
+      "加重"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后症状出现或变得更严重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "发病前有明显的情绪紧张、恐惧、疼痛或站立过久等诱发因素",
+    "key": [
+      "站立过久",
+      "疼痛",
+      "情绪紧张",
+      "恐惧"
+    ],
+    "description": "发病前有明显的情绪紧张、恐惧、疼痛或站立过久等诱发因素，诱发眩晕昏倒",
+    "Syndrome": "气厥",
+    "Sub-Syndrome": "虚证",
+    "TCMname": "厥证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": [
+        "情绪紧张",
+        "恐惧",
+        "疼痛",
+        "站立过久",
+        "诱发因素",
+        "眩晕",
+        "昏倒"
+      ],
+      "Level": null,
+      "Time": "发病前",
+      "Gender": null
+    }
+  },
+  {
+    "name": "多因急躁恼怒而诱发",
+    "key": [
+      "急躁",
+      "恼怒"
+    ],
+    "description": "经常因为急躁或生气而引发某些症状",
+    "Syndrome": "血厥",
+    "Sub-Syndrome": "实证",
+    "TCMname": "厥证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": "经常因为急躁或生气而引发某些症状",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "恼怒后昏厥",
+    "key": [
+      "恼怒"
+    ],
+    "description": "生气后晕倒/昏厥",
+    "Syndrome": "痰厥",
+    "Sub-Syndrome": "虚证",
+    "TCMname": "厥证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": null,
+      "Sys": [
+        "晕倒",
+        "昏厥"
+      ],
+      "Level": "严重",
+      "Time": "生气后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "剧烈咳嗽后昏厥",
+    "key": "咳嗽",
+    "description": "咳嗽很严重然后突然晕倒",
+    "Syndrome": "痰厥",
+    "Sub-Syndrome": "虚证",
+    "TCMname": "厥证",
+    "relation": "触发",
+    "structured_json": {
+      "Part": [
+        "呼吸系统",
+        "神经系统"
+      ],
+      "Sys": [
+        "咳嗽",
+        "晕倒"
+      ],
+      "Level": "严重",
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳则尤甚",
+    "key": "劳",
+    "description": "劳累后更严重",
+    "Syndrome": "气虚",
+    "Sub-Syndrome": "心气虚",
+    "TCMname": "虚劳",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后更严重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "食后胃脘不舒",
+    "key": "食",
+    "description": "吃饭后胃不舒服",
+    "Syndrome": "气虚",
+    "Sub-Syndrome": "脾气虚",
+    "TCMname": "虚劳",
+    "relation": "触发",
+    "structured_json": {
+      "Part": "胃",
+      "Sys": "不舒服",
+      "Level": null,
+      "Time": "吃饭后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "饮食不慎加剧",
+    "key": "饮食不慎",
+    "description": "吃得不注意导致情况恶化",
+    "Syndrome": "阳虚",
+    "Sub-Syndrome": "脾阳虚",
+    "TCMname": "虚劳",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "吃得不注意导致情况恶化",
+      "Level": "恶化",
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳则尤甚",
+    "key": "劳",
+    "description": "劳累后更严重",
+    "Syndrome": "脾虚不运",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "肥胖",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后更严重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "劳倦活动后加重",
+    "key": "劳",
+    "description": "劳累或活动后症状加重（活动后症状加剧）",
+    "Syndrome": "气血虚痹",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "痹证",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累或活动后症状加重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "疲劳时关节疼痛加重",
+    "key": "劳",
+    "description": "疲劳后关节疼痛变得更严重",
+    "Syndrome": "肝肾虚痹",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "痹证",
+    "relation": "加重",
+    "structured_json": {
+      "Part": [
+        "关节"
+      ],
+      "Sys": "疼痛",
+      "Level": "更严重",
+      "Time": "疲劳后",
+      "Gender": null
+    }
+  },
+  {
+    "name": "活动后症状减轻",
+    "key": "活动",
+    "description": "活动后症状有所减轻",
+    "Syndrome": "湿热腰痛",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "腰痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "活动后症状有所减轻",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "遇劳更甚",
+    "key": "劳",
+    "description": "劳累后症状更严重",
+    "Syndrome": "肾虚腰痛",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "腰痛",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "劳累后症状更严重",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "卧则减轻",
+    "key": "卧",
+    "description": "躺着的时候症状减轻",
+    "Syndrome": "肾虚腰痛",
+    "Sub-Syndrome": "肾阳虚",
+    "TCMname": "腰痛",
+    "relation": "减轻",
+    "structured_json": {
+      "Part": null,
+      "Sys": "躺着的时候症状减轻",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "疼痛随情志变化而增减",
+    "key": "情绪变化",
+    "description": "疼痛会随着情绪的变化而有所增减",
+    "Syndrome": "肝郁气滞",
+    "Sub-Syndrome": "阳虚秘",
+    "TCMname": "胁痛",
+    "relation": [
+      "加重",
+      "减轻"
+    ],
+    "structured_json": {
+      "Part": null,
+      "Sys": "疼痛会随着情绪的变化而有所增减",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "重按胀痛更甚",
+    "key": "重按",
+    "description": "用力按压时疼痛更剧烈",
+    "Syndrome": "聚证",
+    "Sub-Syndrome": "食滞痰阻",
+    "TCMname": "积聚",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "用力按压时疼痛更剧烈",
+      "Level": null,
+      "Time": null,
+      "Gender": null
+    }
+  },
+  {
+    "name": "动则喘甚",
+    "key": "动",
+    "description": "一动就喘得厉害",
+    "Syndrome": "虚喘",
+    "Sub-Syndrome": "肾虚不纳",
+    "TCMname": "喘证",
+    "relation": "加重",
+    "structured_json": {
+      "Part": [
+        "肺",
+        "呼吸系统"
+      ],
+      "Sys": "气喘",
+      "Level": "严重",
+      "Time": "活动时",
+      "Gender": null
+    }
+  },
+  {
+    "name": "稍劳尤甚",
+    "key": "劳",
+    "description": "稍微劳累症状加重",
+    "Syndrome": "肺卫不固",
+    "Sub-Syndrome": "阴阳两虚",
+    "TCMname": "汗证",
+    "relation": "加重",
+    "structured_json": {
+      "Part": null,
+      "Sys": "稍微劳累症状加重",
+      "Level": "轻微",
+      "Time": null,
+      "Gender": null
+    }
+  }
+]
