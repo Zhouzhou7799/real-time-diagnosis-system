@@ -88,7 +88,7 @@ extracted_zhenghou = [
 
 
 # 假设您有一个 JSON 文件，路径为 'zhenghou_knowledge_base.json'
-knowledge_base_file = 'modify_data/data_with_similar_zhenghou.json'
+knowledge_base_file = '../modify_data/data_with_similar_zhenghou.json'
 knowledge_base = load_knowledge_base(knowledge_base_file)
 
 # 调用函数进行匹配

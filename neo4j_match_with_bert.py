@@ -2,9 +2,9 @@ from neo4j import GraphDatabase
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
+import json
 from typing import List, Dict, Any
 import logging
-import json
 
 
 
@@ -106,11 +106,14 @@ class SyndromeMatcher:
         self.connector = connector
         self.embedder = EmbeddingService()
         self.syndrome_cache = None
+        self._preload_syndromes()  # 在构造函数中调用此方法
 
     def _preload_syndromes(self):
         """预加载症候数据并缓存"""
         if self.syndrome_cache is None:
+            print("Loading syndromes from graph database...")
             self.syndrome_cache = self.connector.get_all_syndromes()
+            print(f"Loaded {len(self.syndrome_cache)} syndromes.")
 
     def _batch_similarity(self, symptoms: List[str]) -> Dict[str, List[tuple]]:
         """批量相似度计算"""
@@ -141,19 +144,41 @@ class SyndromeMatcher:
             matches[symptom] = scores
         return matches
 
-    def match_zhenghou(self, user_zhenghou: List[dict], threshold: float = 0.5) -> Dict[str, list]:
-        """证候匹配主方法"""
+    def match_zhenghou(self, user_zhenghou: List[Dict[str, Any]], threshold: float = 0.5) -> Dict[str, list]:
+        if self.syndrome_cache is None:
+            raise ValueError("Syndrome cache has not been initialized. Call _preload_syndromes first.")
+
         symptoms = [s["name"] for s in user_zhenghou]
-        similarity_matches = self._batch_similarity(symptoms)
+        syndrome_items = list(self.syndrome_cache.items())
+        syndrome_texts = [desc["description"] for _, desc in syndrome_items]
 
-        detailed_results = []
-        final_results = {}
+        all_embeddings = self.embedder.get_embeddings(symptoms + syndrome_texts)
+        symptom_embeds = all_embeddings[:len(symptoms)]
+        syndrome_embeds = all_embeddings[len(symptoms):]
 
-        for symptom, scores in zip(symptoms, similarity_matches.values()):
+        symptom_embeds = F.normalize(symptom_embeds, p=2, dim=1)
+        syndrome_embeds = F.normalize(syndrome_embeds, p=2, dim=1)
+        sim_matrix = torch.mm(symptom_embeds, syndrome_embeds.T)
+
+        matches = {}
+        detailed_matches = {}
+        for i, symptom in enumerate(symptoms):
+            scores = []
+            for j, (syndrome_name, syndrome_data) in enumerate(syndrome_items):
+                score = sim_matrix[i][j].item()
+                scores.append((syndrome_name, score))
+            sorted_scores = sorted(scores, key=lambda x: x[1], reverse=True)[:5]
+            matches[symptom] = sorted_scores
+
+            # 记录详细的匹配信息，包括相似度分数和对应的中医证候名称
+            detailed_matches[symptom] = [{"syndrome_name": name, "similarity_score": score} for name, score in
+                                         sorted_scores]
+
+        final_results = {symptom: {"matched_zhengxing": [], "similar_syndromes": []} for symptom in symptoms}
+
+        for symptom, scores in matches.items():
             zhengxing_relations = set()
-            symptom_result = {"syndrome": symptom, "score": None, "zhengxing": []}
-
-            for syndrome_name, score in sorted(scores, key=lambda x: x[1], reverse=True):
+            for syndrome_name, score in scores:
                 if score >= threshold:
                     query = """
                     MATCH (s:中医症候 {name:$syndrome_name})<-[:`leads to`]-(subz:中医证型)
@@ -170,21 +195,30 @@ class SyndromeMatcher:
                         for record in result:
                             zhengxing = record['zhengxing']
                             subzhengxing = record['subzhengxing']
-                            if subzhengxing is not None:
+                            if subzhengxing and not subzhengxing.startswith('None'):
                                 zhengxing_relations.add(f"{zhengxing}-{subzhengxing}")
-                            else:
+                            elif not subzhengxing:
                                 zhengxing_relations.add(zhengxing)
 
-                    if symptom_result["score"] is None or score > symptom_result["score"]:
-                        symptom_result["score"] = round(score, 2)
-                        symptom_result["zhengxing"] = sorted(list(zhengxing_relations),
-                                                             key=lambda x: (
-                                                             x.split('-')[0], x.split('-')[1] if '-' in x else ''))
+            # 去除重复的证型，并且保持“中医证型-子证型”的格式，对于没有子证型的中医证型，保留其原样
+            cleaned_zhengxing_relations = set()
+            seen_main_types = {}
+            for item in zhengxing_relations:
+                if '-' in item:
+                    main_type, sub_type = item.split('-', 1)
+                    if main_type not in seen_main_types or seen_main_types[main_type].startswith(main_type):
+                        cleaned_zhengxing_relations.add(item)
+                        seen_main_types[main_type] = item
+                else:
+                    if item not in seen_main_types:
+                        cleaned_zhengxing_relations.add(item)
+                        seen_main_types[item] = item
 
-            detailed_results.append({symptom: [symptom_result]})
-            final_results[symptom] = symptom_result["zhengxing"]
+            final_results[symptom]["matched_zhengxing"] = sorted(list(cleaned_zhengxing_relations),
+                                                                 key=lambda x: (x.split('-')[0] if '-' in x else x,
+                                                                                x.split('-')[1] if '-' in x else ''))
+            final_results[symptom]["similar_syndromes"] = detailed_matches[symptom]
 
-        print(json.dumps(detailed_results, indent=2, ensure_ascii=False))
         return final_results
 
 if __name__ == '__main__':
@@ -196,32 +230,26 @@ if __name__ == '__main__':
     )
     matcher = SyndromeMatcher(connector)
 
-        # 测试数据
-    user_input = [
-        {
-            "name": "胃隐痛",
-            "发病部位": "胃部",
-            "性别": None,
-            "程度": "轻度"
-        },
-        {
-            "name": "面色发黄",
-            "发病部位": "面部",
-            "性别": None,
-            "程度": None
-        },
-        {
-            "name": "食欲不振",
-            "发病部位": "胃部",
-            "性别": None,
-            "程度": None
-        }
-    ]
+    #加载提取的证候信息
+    with open('data/extracted_output.json', 'r', encoding='utf-8') as f:
+         extracted_zhenghou_data = json.load(f)
 
-        # 执行匹配
-    result = matcher.match_zhenghou(user_input, threshold=0.6)
+     # 准备用于匹配的证候列表
+    patient_zhenghou_list = []
+    for item in extracted_zhenghou_data:
+         if 'extracted_zhenghou' in item and isinstance(item['extracted_zhenghou'], list):
+             for zhenghou in item['extracted_zhenghou']:
+                 patient_zhenghou_list.append({
+                     "name": zhenghou.get("name"),
+                     "发病部位": zhenghou.get("发病部位"),
+                     "性别": zhenghou.get("性别"),
+                     "程度": zhenghou.get("程度")
+                 })
+
+    # 执行匹配
+    result = matcher.match_zhenghou(patient_zhenghou_list, threshold=0.8)
 
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
-        # 关闭连接
+    # 关闭连接
     connector.close()

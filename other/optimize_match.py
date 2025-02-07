@@ -95,7 +95,7 @@ if __name__ == '__main__':
     ]
 
     # 假设您的知识库文件路径是 'data_with_similar_zhenghou.json'
-    knowledge_base_file = 'modify_data/data_with_similar_zhenghou.json'
+    knowledge_base_file = '../modify_data/data_with_similar_zhenghou.json'
 
     # 从文件加载知识库
     knowledge_base = load_knowledge_base(knowledge_base_file)

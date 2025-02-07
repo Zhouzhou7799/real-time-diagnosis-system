@@ -1,7 +1,13 @@
+
+import logging
 import json
 import re
 import time
 from openai import OpenAI
+
+# 配置日志
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # 初始化 OpenAI 客户端
 client = OpenAI(
@@ -52,7 +58,7 @@ def process_user_input(data, batch_size=5, delay=1):
                 # 调用模型
                 response = client.chat.completions.create(
                     messages=[{"role": "user", "content": request_content}],
-                    model="gpt-4o"
+                    model="gpt-4o-mini"
                 )
                 content = response.choices[0].message.content
                 cleaned_content = clean_model_response(content)
@@ -94,8 +100,8 @@ def process_user_input(data, batch_size=5, delay=1):
             time.sleep(delay)
 
 # 主逻辑
-if __name__ == "__main__":
-    with open(input_path, 'r', encoding='utf-8') as f:
-        user_input_data = json.load(f)
-
-    process_user_input(user_input_data)
+# if __name__ == "__main__":
+#     with open(input_path, 'r', encoding='utf-8') as f:
+#         user_input_data = json.load(f)
+#
+#     process_user_input(user_input_data)
